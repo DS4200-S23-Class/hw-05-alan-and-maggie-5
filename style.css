@@ -1,0 +1,40 @@
+/* Make all the font Arial*/
+body
+{
+    font: Arial;
+}
+
+/* Center text */
+.centered {
+    text-align: center;
+}
+
+/* Create rows */
+.row {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+/* create columns using images and text */
+.leftColumn {
+    float: left;
+    width: 60%;
+}
+
+.rightColumn {
+    float: left;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: grey;
+    border: solid;
+    padding: 5px;
+}
+
+/* Add border when clicked */
+.add_border {
+    stroke-width: 5;
+    stroke: orange;
+}
