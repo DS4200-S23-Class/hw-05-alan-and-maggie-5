@@ -1,33 +1,78 @@
 <!DOCTYPE html>
-<html> 
+<html>
 
 <head>
-    <meta charset=utf-8/>
+    <meta charset=utf-8 />
     <title> hw-05 </title>
     <link rel="stylesheet" href="style.css">
-   
+
     <script src="js/d3.v6.1.1/d3.min.js"></script>
 
 </head>
 
 
 <body>
- <!-- A centered header-->
+    <!-- A centered header-->
     <h1 class="centered">hw-05: Interactive Graph with D3</h1>
 
 
-    <div id= "2 columns">
+    <div id="2 columns">
+        <div class="row">
 
-        <div class="leftColumn" > </div>
+            <div class="leftColumn">
+                <div id="vis3"></div>
+                <div id="vis5"></div>
+            </div>
 
-        <!--
-        <div id="vis1"></div>
-        <div id="vis2"></div>
-        -->
-        
-        <div id="vis3"></div>
+            <div class="rightColumn">
+                <div id="vis4"></div>
+                <h2>Add a New Point</h2>
 
-        <div  class="rightColumn" > </div>
+                <p>Choose coordinates between 0 and 9, inclusive. </p>
+
+                <form>
+                    <!--
+                        Select possible x coordinates
+                    -->
+                    <label for="x_coord">Choose an x:</label>
+                    <select id="x_coord" name="x_coord_options">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select><br><br>
+
+                    <!--
+                        Select possible y coordinates
+                    -->
+                    <label for="y_coord">Choose an y:</label>
+                    <select id="y_coord" name="y_coord_options">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select><br><br>
+                    <!--
+                        Button for adding coordinates
+                    -->
+                    <button type="button" id="add_coords_helper" onClick="addCoordsHelper()">Add new coordinates!</button>
+                </form>
+            </div>
+
+
+        </div>
 
     </div>
 
@@ -37,7 +82,13 @@
            -->
         <h2 class="centered"> Acknowledgements</h2>
         <ul>
-            <li> item 1 </li>
+            <li> <a href="https://stackoverflow.com/questions/51165003/d3-circle-mouseover">Stack Overflow Mouseover</a> </li>
+            <li> <a href="https://observablehq.com/@d3/d3-scaleband">Scaleband D3</a> </li>
+            <li> <a href="https://www.tutorialsteacher.com/d3js/animated-bar-chart-d3">Animated Bar Chart</a> </li>
+            <li> <a href="https://atdyer.github.io/d3-chart/examples/26.html">D3 Charts</a> </li>
+            <li> <a href="https://stackoverflow.com/questions/60734486/d3-event-pagex-d3-mousethis0">Stack Overflow Event Selection</a> </li>
+            <li> <a href="https://d3-graph-gallery.com/intro_d3js.html">D3 Intro</a> </li>
+            <li> <a href="https://stackoverflow.com/questions/53236114/if-statement-for-d3">Stack Overflow If Statement D3</a> </li>
         </ul>
 
     </div>
