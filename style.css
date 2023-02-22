@@ -1,6 +1,5 @@
 /* Make all the font Arial*/
-body
-{
+body {
     font: Arial;
 }
 
@@ -16,25 +15,21 @@ body
     text-align: left;
 }
 
-/* create columns using images and text */
+/* create left column using images and text */
 .leftColumn {
     float: left;
     width: 60%;
 }
 
+/* Create right column */
 .rightColumn {
     float: left;
 }
 
+/* Tooltip for mouse events */
 .tooltip {
     position: absolute;
     background-color: grey;
     border: solid;
     padding: 5px;
-}
-
-/* Add border when clicked */
-.add_border {
-    stroke-width: 5;
-    stroke: orange;
 }
